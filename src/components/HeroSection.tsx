@@ -18,22 +18,24 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-primary font-medium tracking-wider uppercase text-sm animate-fade-up">
-                Leadership Expert • Top 40 Speaker • Best-Selling Author
+                Leadership Expert • Top 40 Speaker • USAF Lt. Colonel (Ret.)
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight animate-fade-up animation-delay-200">
                 Transform Your
                 <span className="block gradient-text">Leadership Impact</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl animate-fade-up animation-delay-400">
-                Empowering C-Suite executives and organizations to develop future-focused workplaces, 
-                retain top talent, and achieve extraordinary results.
+                Self-leadership isn't optional—it's the fuel that drives professional leadership 
+                and transforms organizations from the inside out.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up animation-delay-600">
-              <Button variant="hero" size="xl" className="group">
-                Free Leadership Assessment
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <Button variant="hero" size="xl" className="group" asChild>
+                <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
+                  Free Leadership Assessment
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </a>
               </Button>
               <Button variant="heroOutline" size="xl" className="group">
                 <Play className="mr-2 h-5 w-5" />
@@ -48,10 +50,10 @@ const HeroSection = () => {
                 <p className="text-sm text-muted-foreground">Years Experience</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-serif font-bold text-primary">500+</p>
-                <p className="text-sm text-muted-foreground">Organizations Served</p>
+                <p className="text-3xl font-serif font-bold text-primary">12</p>
+                <p className="text-sm text-muted-foreground">Years at Pentagon</p>
               </div>
-              <div className="text-3xl font-serif font-bold text-primary text-center">
+              <div className="text-center">
                 <p className="text-3xl font-serif font-bold text-primary">5</p>
                 <p className="text-sm text-muted-foreground">Published Books</p>
               </div>
@@ -73,9 +75,9 @@ const HeroSection = () => {
 
               {/* Floating badge */}
               <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-xl animate-float">
-                <p className="text-sm font-medium text-muted-foreground">Featured In</p>
+                <p className="text-sm font-medium text-muted-foreground">Trusted By</p>
                 <p className="text-lg font-serif font-bold text-foreground">Fortune 500</p>
-                <p className="text-xs text-primary">Trusted Partner</p>
+                <p className="text-xs text-primary">& Government Agencies</p>
               </div>
             </div>
           </div>

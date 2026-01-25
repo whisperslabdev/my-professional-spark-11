@@ -1,4 +1,4 @@
-import { Award, Mic, BookOpen, Users } from 'lucide-react';
+import { Award, Mic, BookOpen, Users, Shield, GraduationCap } from 'lucide-react';
 
 const achievements = [
   {
@@ -8,18 +8,18 @@ const achievements = [
   },
   {
     icon: BookOpen,
-    title: 'Best-Selling Author',
-    description: 'Author of "Leadership Is Influence" and multiple internationally acclaimed books.',
+    title: '#1 Best-Selling Author',
+    description: 'EIPPY Award winner and author of "Leadership Is Influence" and 4 other acclaimed books.',
   },
   {
-    icon: Award,
-    title: 'EIPPY Award Winner',
-    description: 'Recognized for excellence in publishing and impactful leadership content.',
+    icon: Shield,
+    title: 'USAF Lt. Colonel (Ret.)',
+    description: '20+ years of military service including 12 consecutive years at the Pentagon.',
   },
   {
     icon: Users,
-    title: 'DEI Certified Trainer',
-    description: 'SHRM-certified diversity trainer helping organizations build inclusive cultures.',
+    title: 'SHRM Certified DEI Trainer',
+    description: 'Certified Diversity-Train-The-Trainer helping organizations build inclusive cultures.',
   },
 ];
 
@@ -40,22 +40,45 @@ const AboutSection = () => {
               <p className="text-lg text-muted-foreground leading-relaxed">
                 With over 30 years of expertise in leadership development, Paul Lawrence Vann 
                 is the Founder and CEO of Wealth Building Academy, LLC. He specializes in 
-                working with C-Suite leaders to develop future-focused workplaces.
+                working with C-Suite leaders to develop future-focused workplaces, retain top 
+                talent, and improve return on investment.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                A former Financial Manager at the United States Air Force who served at the Pentagon, 
-                Paul brings a unique blend of military discipline and corporate excellence to his 
-                leadership development programs. His mission is to help organizations maximize 
-                their human potential, retain top talent, and increase revenue.
+                A retired United States Air Force Lieutenant Colonel who served 12 consecutive years 
+                at the Pentagon, Paul brings a unique blend of military discipline and corporate 
+                excellence to his leadership development programs. He uses a proprietary system to 
+                develop leadership core competencies including emotional intelligence, remote 
+                leadership, and organizational resiliency.
               </p>
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
+                <GraduationCap className="h-5 w-5 text-primary" />
+                Education
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                <div className="bg-card border border-border rounded-lg px-4 py-2">
+                  <span className="text-sm text-muted-foreground">M.S. Contracts & Acquisition</span>
+                  <span className="block text-xs text-primary">Florida Institute of Technology</span>
+                </div>
+                <div className="bg-card border border-border rounded-lg px-4 py-2">
+                  <span className="text-sm text-muted-foreground">M.A. Business Management</span>
+                  <span className="block text-xs text-primary">Central Michigan University</span>
+                </div>
+                <div className="bg-card border border-border rounded-lg px-4 py-2">
+                  <span className="text-sm text-muted-foreground">B.A. Business Administration</span>
+                  <span className="block text-xs text-primary">Shaw University</span>
+                </div>
+              </div>
             </div>
 
             <div className="flex flex-wrap gap-4">
               <div className="bg-card border border-border rounded-lg px-4 py-2">
-                <span className="text-sm text-muted-foreground">U.S. Air Force Veteran</span>
+                <span className="text-sm text-muted-foreground">Georgetown Fellow</span>
               </div>
               <div className="bg-card border border-border rounded-lg px-4 py-2">
-                <span className="text-sm text-muted-foreground">Georgetown Fellow</span>
+                <span className="text-sm text-muted-foreground">Toastmasters Award Winner</span>
               </div>
               <div className="bg-card border border-border rounded-lg px-4 py-2">
                 <span className="text-sm text-muted-foreground">Podcast Host</span>

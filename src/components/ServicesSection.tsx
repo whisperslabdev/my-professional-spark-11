@@ -4,30 +4,30 @@ import { ArrowRight, Target, Lightbulb, TrendingUp, Users2, Calendar } from 'luc
 const services = [
   {
     icon: Target,
-    title: 'Leadership Development Workshops',
-    description: 'In-person and virtual workshops that provide organizations with leadership core competencies to maximize human potential.',
-    features: ['Half-Day to 12-Month Programs', 'Custom Curriculum', 'Measurable Outcomes'],
+    title: 'Leadership Core Competency Programs',
+    description: 'Award-winning, proprietary system to develop your entire staff of leaders, managers, employees, and contractors.',
+    features: ['Emotional Intelligence', 'Remote Leadership', 'Organizational Resiliency'],
     highlighted: true,
   },
   {
     icon: Users2,
-    title: 'Executive Coaching',
-    description: 'One-on-one coaching for C-Suite leaders focused on developing influence, strategic thinking, and organizational impact.',
-    features: ['Personalized Assessment', 'Action Plans', 'Accountability Partner'],
+    title: 'C-Suite Executive Development',
+    description: 'Specialized coaching for C-Suite leaders to develop future-focused workplaces and retain top talent.',
+    features: ['Leadership Assessments', 'Strategic Planning', 'ROI Optimization'],
     highlighted: false,
   },
   {
     icon: Lightbulb,
-    title: 'DEI Training',
-    description: 'SHRM-certified diversity, equity, and inclusion training to help organizations build inclusive cultures.',
-    features: ['Train-the-Trainer', 'Cultural Competency', 'Inclusive Leadership'],
+    title: 'Diversity-Train-The-Trainer',
+    description: 'SHRM-certified DEI training programs to help organizations build inclusive, high-performing cultures.',
+    features: ['Certified Curriculum', 'Cultural Competency', 'Inclusive Leadership'],
     highlighted: false,
   },
   {
     icon: TrendingUp,
-    title: 'Talent Retention Strategy',
-    description: 'Strategic consulting to improve employee engagement, reduce turnover, and increase organizational ROI.',
-    features: ['Retention Audits', 'Engagement Metrics', 'Implementation Support'],
+    title: 'Employee Upskilling & Retention',
+    description: 'Close skill gaps, improve employee journeys, and reduce attrition by providing professional growth opportunities.',
+    features: ['Skills Gap Analysis', 'Career Development', 'Engagement Metrics'],
     highlighted: false,
   },
 ];
@@ -98,13 +98,15 @@ const ServicesSection = () => {
         {/* CTA */}
         <div className="text-center">
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
-            <Button variant="hero" size="xl" className="group">
-              <Calendar className="mr-2 h-5 w-5" />
-              Schedule a Consultation
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+            <Button variant="hero" size="xl" className="group" asChild>
+              <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
+                <Calendar className="mr-2 h-5 w-5" />
+                Book Free Leadership Assessment
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
             </Button>
             <span className="text-sm text-muted-foreground">
-              Free 30-minute discovery call
+              20-minute Zoom session
             </span>
           </div>
         </div>

@@ -50,8 +50,10 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="hero" size="default">
-              Book a Call
+            <Button variant="hero" size="default" asChild>
+              <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
+                Book a Call
+              </a>
             </Button>
           </nav>
 
@@ -78,8 +80,10 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="hero" size="default" className="mt-2">
-                Book a Call
+              <Button variant="hero" size="default" className="mt-2" asChild>
+                <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
+                  Book a Call
+                </a>
               </Button>
             </nav>
           </div>

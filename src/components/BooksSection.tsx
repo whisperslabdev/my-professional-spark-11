@@ -7,6 +7,7 @@ const books = [
     year: '2023',
     description: 'A blueprint for becoming a leader of influence. Learn the three-pronged approach to developing all members of your staff and maximizing human potential.',
     featured: true,
+    link: 'https://www.amazon.com/Leadership-Influence-Paul-Lawrence-Vann/dp/B0CKM1XLQN',
   },
   {
     title: 'Faith For Times Like Now',
@@ -28,6 +29,12 @@ const books = [
     description: 'Chart your course to success with practical strategies for achieving your personal and professional goals.',
     featured: false,
   },
+  {
+    title: '101 Great Ways to Enhance Your Career',
+    year: '2011',
+    description: 'Contributing author sharing expert insights on career advancement and professional development.',
+    featured: false,
+  },
 ];
 
 const BooksSection = () => {
@@ -40,10 +47,10 @@ const BooksSection = () => {
             Published Works
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
-            Best-Selling Books
+            #1 International Best-Selling Author
           </h2>
           <p className="text-lg text-muted-foreground">
-            Internationally acclaimed publications available in over 66 countries. 
+            EIPPY Award-winning author with publications available in over 66 countries. 
             Find them on Amazon, Barnes & Noble, and bookstores worldwide.
           </p>
         </div>
@@ -61,7 +68,7 @@ const BooksSection = () => {
                       <Star key={i} className="h-5 w-5 fill-primary text-primary" />
                     ))}
                   </div>
-                  <span className="text-sm text-muted-foreground">Best Seller</span>
+                  <span className="text-sm text-muted-foreground">#1 International Best Seller</span>
                 </div>
 
                 <div>
@@ -75,9 +82,11 @@ const BooksSection = () => {
                 </div>
 
                 <div className="flex flex-wrap gap-4">
-                  <Button variant="hero" size="lg" className="group">
-                    Get Your Copy
-                    <ExternalLink className="ml-2 h-4 w-4" />
+                  <Button variant="hero" size="lg" className="group" asChild>
+                    <a href={books[0].link} target="_blank" rel="noopener noreferrer">
+                      Get Your Copy
+                      <ExternalLink className="ml-2 h-4 w-4" />
+                    </a>
                   </Button>
                   <Button variant="heroOutline" size="lg">
                     Read Sample Chapter
@@ -103,7 +112,7 @@ const BooksSection = () => {
         </div>
 
         {/* Other Books Grid */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-4 gap-6">
           {books.slice(1).map((book, index) => (
             <div
               key={book.title}

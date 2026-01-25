@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { Mail, Phone, Linkedin, Youtube, Podcast, ArrowRight } from 'lucide-react';
+import { Mail, Phone, Linkedin, Youtube, Podcast, ArrowRight, Calendar } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -15,8 +15,8 @@ const ContactSection = () => {
               Let's Start a <span className="gradient-text">Conversation</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ready to transform your organization's leadership? Book a free assessment 
-              to discuss how we can help you achieve your goals.
+              Ready to develop a future-focused workforce? Book a free leadership assessment 
+              to discover how we can help you retain top talent and maximize performance.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ const ContactSection = () => {
                     Contact Information
                   </h3>
                   <p className="text-muted-foreground">
-                    Reach out directly or schedule a complimentary leadership assessment.
+                    Reach out directly or schedule a complimentary 20-minute leadership assessment.
                   </p>
                 </div>
 
@@ -77,7 +77,9 @@ const ContactSection = () => {
                       <Linkedin className="h-5 w-5 text-muted-foreground hover:text-primary" />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.youtube.com/@LeadershipIsInfluence"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-12 h-12 rounded-lg bg-card border border-border hover:border-primary/30 hover:bg-primary/10 transition-all flex items-center justify-center"
                     >
                       <Youtube className="h-5 w-5 text-muted-foreground hover:text-primary" />
@@ -95,16 +97,21 @@ const ContactSection = () => {
               {/* CTA */}
               <div className="flex flex-col justify-center space-y-6">
                 <div className="p-6 rounded-xl bg-card border border-border">
-                  <h4 className="text-lg font-serif font-bold text-foreground mb-2">
-                    Free Leadership Assessment
-                  </h4>
+                  <div className="flex items-center gap-2 mb-2">
+                    <Calendar className="h-5 w-5 text-primary" />
+                    <h4 className="text-lg font-serif font-bold text-foreground">
+                      Free Leadership Assessment
+                    </h4>
+                  </div>
                   <p className="text-muted-foreground mb-4">
-                    Discover your leadership strengths and areas for growth with a 
-                    complimentary 30-minute consultation.
+                    Get a 20-minute Zoom session with insight you need to develop a future-focused 
+                    workforce. 100% guaranteed to provide actionable strategies.
                   </p>
-                  <Button variant="hero" size="lg" className="w-full group">
-                    Book Your Assessment
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  <Button variant="hero" size="lg" className="w-full group" asChild>
+                    <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
+                      Book Your Assessment
+                      <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                    </a>
                   </Button>
                 </div>
 

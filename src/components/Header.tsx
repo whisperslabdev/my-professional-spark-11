@@ -16,9 +16,8 @@ const Header = () => {
 
   const navLinks = [
     { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Books', href: '#books' },
-    { name: 'Speaking', href: '#speaking' },
+    { name: 'Opportunities', href: '#services' },
+    { name: 'Strategy', href: '#strategy' },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -35,7 +34,7 @@ const Header = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-3">
             <span className="text-2xl font-serif font-bold text-foreground">
-              Paul <span className="text-primary">Vann</span>
+              Michael <span className="text-primary">Kearse</span>
             </span>
           </a>
 
@@ -51,8 +50,8 @@ const Header = () => {
               </a>
             ))}
             <Button variant="hero" size="default" asChild>
-              <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
-                Book a Call
+              <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+                Let's Connect
               </a>
             </Button>
           </nav>
@@ -81,8 +80,8 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="hero" size="default" className="mt-2" asChild>
-                <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
-                  Book a Call
+                <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+                  Let's Connect
                 </a>
               </Button>
             </nav>

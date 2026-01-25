@@ -22,7 +22,7 @@ const HeroSection = () => {
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight animate-fade-up animation-delay-200">
                 Turn Idle Capital Into
-                <span className="block gradient-text">Predictable Returns</span>
+                <span className="block gradient-text">Passive Income</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl animate-fade-up animation-delay-400">
                 Real estate deals you don't have to swing a hammer for. Discover how to build 

@@ -1,33 +1,33 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Target, Lightbulb, TrendingUp, Users2, Calendar } from 'lucide-react';
+import { ArrowRight, Home, Wallet, TrendingUp, Handshake, MessageSquare } from 'lucide-react';
 
 const services = [
   {
-    icon: Target,
-    title: 'Leadership Core Competency Programs',
-    description: 'Award-winning, proprietary system to develop your entire staff of leaders, managers, employees, and contractors.',
-    features: ['Emotional Intelligence', 'Remote Leadership', 'Organizational Resiliency'],
+    icon: Home,
+    title: 'Virtual Wealth Flipping',
+    description: 'Learn how to acquire and sell properties entirely online without ever stepping foot on the property.',
+    features: ['Off-Market Deals', 'No Rehab Required', 'Remote Investing'],
     highlighted: true,
   },
   {
-    icon: Users2,
-    title: 'C-Suite Executive Development',
-    description: 'Specialized coaching for C-Suite leaders to develop future-focused workplaces and retain top talent.',
-    features: ['Leadership Assessments', 'Strategic Planning', 'ROI Optimization'],
-    highlighted: false,
-  },
-  {
-    icon: Lightbulb,
-    title: 'Diversity-Train-The-Trainer',
-    description: 'SHRM-certified DEI training programs to help organizations build inclusive, high-performing cultures.',
-    features: ['Certified Curriculum', 'Cultural Competency', 'Inclusive Leadership'],
+    icon: Wallet,
+    title: 'Private Lending Opportunities',
+    description: 'Turn your idle capital into predictable returns with secured real estate investments.',
+    features: ['12% Interest Returns', 'First Lien Position', 'Passive Income'],
     highlighted: false,
   },
   {
     icon: TrendingUp,
-    title: 'Employee Upskilling & Retention',
-    description: 'Close skill gaps, improve employee journeys, and reduce attrition by providing professional growth opportunities.',
-    features: ['Skills Gap Analysis', 'Career Development', 'Engagement Metrics'],
+    title: 'Seller Financing Strategies',
+    description: 'Discover how to structure creative deals using seller financing and wraps to create cash flow.',
+    features: ['No Bank Loans', '30-Year Terms', 'Monthly Cash Flow'],
+    highlighted: false,
+  },
+  {
+    icon: Handshake,
+    title: 'Deal Sourcing & Partnerships',
+    description: 'Partner on real estate deals or learn how to find off-market opportunities others overlook.',
+    features: ['Joint Ventures', 'Deal Analysis', 'Market Insights'],
     highlighted: false,
   },
 ];
@@ -39,14 +39,14 @@ const ServicesSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
-            Services & Programs
+            Investment Opportunities
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
-            Transform Your Organization
+            Build Wealth Creatively
           </h2>
           <p className="text-lg text-muted-foreground">
-            Results-focused leadership consulting and development programs designed 
-            to help your organization achieve a competitive advantage.
+            Whether you're looking to invest passively or learn creative real estate strategies, 
+            there's an opportunity for you to grow your wealth.
           </p>
         </div>
 
@@ -63,7 +63,7 @@ const ServicesSection = () => {
             >
               {service.highlighted && (
                 <div className="absolute -top-3 left-8 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
-                  Most Popular
+                  Signature Strategy
                 </div>
               )}
 
@@ -99,14 +99,14 @@ const ServicesSection = () => {
         <div className="text-center">
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
             <Button variant="hero" size="xl" className="group" asChild>
-              <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
-                <Calendar className="mr-2 h-5 w-5" />
-                Book Free Leadership Assessment
+              <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+                <MessageSquare className="mr-2 h-5 w-5" />
+                Let's Discuss Opportunities
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
             <span className="text-sm text-muted-foreground">
-              20-minute Zoom session
+              Free strategy call available
             </span>
           </div>
         </div>

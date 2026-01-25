@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Play } from 'lucide-react';
+import { ArrowRight, Play, Building2, DollarSign, Home } from 'lucide-react';
 import heroImage from '@/assets/hero-portrait.jpg';
 
 const HeroSection = () => {
@@ -18,44 +18,44 @@ const HeroSection = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-primary font-medium tracking-wider uppercase text-sm animate-fade-up">
-                Leadership Expert • Top 40 Speaker • USAF Lt. Colonel (Ret.)
+                Real Estate Investor • Creative Financing Expert • MBA, PMP
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight animate-fade-up animation-delay-200">
-                Transform Your
-                <span className="block gradient-text">Leadership Impact</span>
+                Turn Idle Capital Into
+                <span className="block gradient-text">Predictable Returns</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl animate-fade-up animation-delay-400">
-                Self-leadership isn't optional—it's the fuel that drives professional leadership 
-                and transforms organizations from the inside out.
+                Real estate deals you don't have to swing a hammer for. Discover how to build 
+                passive income through creative financing and seller-financed properties.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-up animation-delay-600">
               <Button variant="hero" size="xl" className="group" asChild>
-                <a href="https://calendly.com/info-3623/discussion-insight-overview" target="_blank" rel="noopener noreferrer">
-                  Free Leadership Assessment
+                <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+                  Let's Connect
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>
               <Button variant="heroOutline" size="xl" className="group">
                 <Play className="mr-2 h-5 w-5" />
-                Watch Keynote
+                Learn My Strategy
               </Button>
             </div>
 
             {/* Trust indicators */}
             <div className="flex flex-wrap items-center gap-8 pt-8 border-t border-border animate-fade-up animation-delay-800">
               <div className="text-center">
-                <p className="text-3xl font-serif font-bold text-primary">30+</p>
-                <p className="text-sm text-muted-foreground">Years Experience</p>
+                <p className="text-3xl font-serif font-bold text-primary">100+</p>
+                <p className="text-sm text-muted-foreground">Doors Acquired</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-serif font-bold text-primary">12</p>
-                <p className="text-sm text-muted-foreground">Years at Pentagon</p>
+                <p className="text-3xl font-serif font-bold text-primary">$4M+</p>
+                <p className="text-sm text-muted-foreground">Private Capital Raised</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl font-serif font-bold text-primary">5</p>
-                <p className="text-sm text-muted-foreground">Published Books</p>
+                <p className="text-3xl font-serif font-bold text-primary">60+</p>
+                <p className="text-sm text-muted-foreground">Properties Managed</p>
               </div>
             </div>
           </div>
@@ -69,15 +69,15 @@ const HeroSection = () => {
               
               <img
                 src={heroImage}
-                alt="Paul Lawrence Vann - Leadership Expert"
+                alt="Michael Kearse - Real Estate Investor"
                 className="relative rounded-2xl shadow-2xl w-full aspect-[4/3] object-cover object-center"
               />
 
               {/* Floating badge */}
               <div className="absolute -bottom-6 -left-6 bg-card border border-border rounded-xl p-4 shadow-xl animate-float">
-                <p className="text-sm font-medium text-muted-foreground">Trusted By</p>
-                <p className="text-lg font-serif font-bold text-foreground">Fortune 500</p>
-                <p className="text-xs text-primary">& Government Agencies</p>
+                <p className="text-sm font-medium text-muted-foreground">Specializing In</p>
+                <p className="text-lg font-serif font-bold text-foreground">Virtual Wealth</p>
+                <p className="text-xs text-primary">Flipping Strategy</p>
               </div>
             </div>
           </div>

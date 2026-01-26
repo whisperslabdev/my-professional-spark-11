@@ -1,4 +1,4 @@
-import { Building2, TrendingUp, DollarSign, Users, GraduationCap, Award } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, Users, GraduationCap, MapPin } from 'lucide-react';
 
 const achievements = [
   {
@@ -23,91 +23,99 @@ const achievements = [
   },
 ];
 
+const credentials = [
+  { abbrev: 'MBA', full: 'Master of Business Administration' },
+  { abbrev: 'PMP', full: 'Project Management Professional' },
+  { abbrev: 'CSPO', full: 'Certified Scrum Product Owner' },
+  { abbrev: 'SAFe® 4 Agilist', full: 'Certified Agile Professional' },
+];
+
 const AboutSection = () => {
   return (
-    <section id="about" className="py-24 bg-secondary/20">
+    <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Content */}
-          <div className="space-y-8">
-            <div className="space-y-4">
-              <p className="text-primary font-medium tracking-wider uppercase text-sm">
-                About Michael Kearse
-              </p>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground">
-                Building Wealth Through <span className="gradient-text">Creative Financing</span>
-              </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Michael Kearse is a Pennsylvania-based real estate investor who has cracked the code 
-                on creative deal-making. With a background in project management and a passion for 
-                innovative investing strategies, he specializes in seller financing, private capital, 
-                and virtual property flipping.
-              </p>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                His unique approach allows investors to build passive income without relying on 
-                traditional bank loans. Michael sources off-market deals that others overlook and 
-                structures win-win arrangements that benefit both buyers and lenders. Whether you're 
-                a beginner or a seasoned investor, his strategies will challenge and inspire you.
+        {/* Main Intro */}
+        <div className="max-w-3xl mx-auto text-center mb-20">
+          <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
+            About Michael Kearse
+          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
+            Building Wealth Through <span className="gradient-text">Creative Financing</span>
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            Michael Kearse is a Pennsylvania-based real estate investor who has cracked the code 
+            on creative deal-making. With a background in project management and a passion for 
+            innovative investing strategies, he specializes in seller financing, private capital, 
+            and virtual property flipping.
+          </p>
+        </div>
+
+        {/* Achievements Grid */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+          {achievements.map((achievement, index) => (
+            <div
+              key={achievement.title}
+              className="group card-elevated p-6 rounded-xl border border-border hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center"
+              style={{ animationDelay: `${index * 100}ms` }}
+            >
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4 mx-auto group-hover:bg-primary/20 transition-colors">
+                <achievement.icon className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                {achievement.title}
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                {achievement.description}
               </p>
             </div>
+          ))}
+        </div>
 
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-foreground flex items-center gap-2">
+        {/* Credentials & Market Focus - Two Column */}
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Credentials */}
+          <div className="bg-secondary/30 rounded-2xl p-8 border border-border">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                 <GraduationCap className="h-5 w-5 text-primary" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground">
                 Credentials & Certifications
               </h3>
-              <div className="flex flex-wrap gap-3">
-                <div className="bg-card border border-border rounded-lg px-4 py-2">
-                  <span className="text-sm font-medium text-foreground">MBA</span>
-                  <span className="block text-xs text-muted-foreground">Master of Business Administration</span>
-                </div>
-                <div className="bg-card border border-border rounded-lg px-4 py-2">
-                  <span className="text-sm font-medium text-foreground">PMP</span>
-                  <span className="block text-xs text-muted-foreground">Project Management Professional</span>
-                </div>
-                <div className="bg-card border border-border rounded-lg px-4 py-2">
-                  <span className="text-sm font-medium text-foreground">CSPO</span>
-                  <span className="block text-xs text-muted-foreground">Certified Scrum Product Owner</span>
-                </div>
-                <div className="bg-card border border-border rounded-lg px-4 py-2">
-                  <span className="text-sm font-medium text-foreground">SAFe® 4 Agilist</span>
-                  <span className="block text-xs text-muted-foreground">Certified Agile Professional</span>
-                </div>
-              </div>
             </div>
-
-            <div className="flex flex-wrap gap-4">
-              <div className="bg-card border border-border rounded-lg px-4 py-2">
-                <span className="text-sm text-muted-foreground">Pennsylvania Based</span>
-              </div>
-              <div className="bg-card border border-border rounded-lg px-4 py-2">
-                <span className="text-sm text-muted-foreground">Western PA & Ohio Markets</span>
-              </div>
-              <div className="bg-card border border-border rounded-lg px-4 py-2">
-                <span className="text-sm text-muted-foreground">Podcast Guest</span>
-              </div>
+            <div className="grid grid-cols-2 gap-4">
+              {credentials.map((cred) => (
+                <div key={cred.abbrev} className="bg-card border border-border rounded-lg p-4">
+                  <span className="text-lg font-bold text-foreground block">{cred.abbrev}</span>
+                  <span className="text-xs text-muted-foreground">{cred.full}</span>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Achievements Grid */}
-          <div className="grid sm:grid-cols-2 gap-6">
-            {achievements.map((achievement, index) => (
-              <div
-                key={achievement.title}
-                className="group card-elevated p-6 rounded-xl border border-border hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
-                <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <achievement.icon className="h-6 w-6 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">
-                  {achievement.title}
-                </h3>
-                <p className="text-sm text-muted-foreground">
-                  {achievement.description}
-                </p>
+          {/* Market Focus */}
+          <div className="bg-secondary/30 rounded-2xl p-8 border border-border">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <MapPin className="h-5 w-5 text-primary" />
               </div>
-            ))}
+              <h3 className="text-xl font-semibold text-foreground">
+                Market Focus
+              </h3>
+            </div>
+            <div className="space-y-4">
+              <div className="bg-card border border-border rounded-lg p-4">
+                <span className="text-lg font-bold text-foreground block">Western Pennsylvania</span>
+                <span className="text-sm text-muted-foreground">Primary investment market with deep local expertise</span>
+              </div>
+              <div className="bg-card border border-border rounded-lg p-4">
+                <span className="text-lg font-bold text-foreground block">Ohio Markets</span>
+                <span className="text-sm text-muted-foreground">Expanding portfolio with high-yield opportunities</span>
+              </div>
+              <div className="bg-card border border-border rounded-lg p-4 flex items-center gap-3">
+                <span className="text-primary font-medium">🎙️ Featured Podcast Guest</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

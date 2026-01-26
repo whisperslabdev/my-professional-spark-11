@@ -34,14 +34,14 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-24">
+    <section id="services" className="py-16">
       <div className="container mx-auto px-6">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-10">
+          <p className="text-primary font-medium tracking-wider uppercase text-sm mb-3">
             Investment Opportunities
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
             Build Wealth Creatively
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -51,37 +51,37 @@ const ServicesSection = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid md:grid-cols-2 gap-6 mb-10">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className={`group relative p-8 rounded-2xl transition-all duration-300 hover:-translate-y-1 ${
+              className={`group relative p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1 ${
                 service.highlighted
                   ? 'bg-gradient-to-br from-primary/10 via-primary/5 to-transparent border-2 border-primary/30'
                   : 'card-elevated border border-border hover:border-primary/20'
               }`}
             >
               {service.highlighted && (
-                <div className="absolute -top-3 left-8 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
+                <div className="absolute -top-3 left-6 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full">
                   Signature Strategy
                 </div>
               )}
 
-              <div className="flex items-start gap-6">
-                <div className={`w-14 h-14 rounded-xl flex items-center justify-center shrink-0 ${
+              <div className="flex items-start gap-4">
+                <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${
                   service.highlighted ? 'bg-primary text-primary-foreground' : 'bg-primary/10'
                 }`}>
-                  <service.icon className={`h-7 w-7 ${service.highlighted ? '' : 'text-primary'}`} />
+                  <service.icon className={`h-6 w-6 ${service.highlighted ? '' : 'text-primary'}`} />
                 </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-xl font-semibold text-foreground">
+                <div className="space-y-3">
+                  <h3 className="text-lg font-semibold text-foreground">
                     {service.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-muted-foreground text-sm">
                     {service.description}
                   </p>
-                  <ul className="space-y-2">
+                  <ul className="space-y-1">
                     {service.features.map((feature) => (
                       <li key={feature} className="flex items-center gap-2 text-sm text-muted-foreground">
                         <div className="w-1.5 h-1.5 rounded-full bg-primary" />

@@ -28,7 +28,7 @@ const achievements = [
 const AboutSection = () => {
   return (
     <section id="about" className="py-16 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8 md:px-16 lg:px-24">
         {/* Main Intro with Image */}
         <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
           {/* Text Content */}

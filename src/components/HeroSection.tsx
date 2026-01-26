@@ -20,13 +20,25 @@ const HeroSection = () => {
                 Real Estate Investor • Creative Financing Expert • MBA, PMP
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight animate-fade-up animation-delay-200">
-                Turn Idle Capital Into
-                <span className="block gradient-text">Passive Income</span>
+                How to Generate <span className="gradient-text">$15,000-$75,000</span>
+                <span className="block">in Passive Income Annually</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up animation-delay-400">
                 Real estate deals you don't have to swing a hammer for. Discover how to build 
                 passive income through creative financing and seller-financed properties.
               </p>
+
+            {/* Video Box */}
+            <div className="mt-8 animate-fade-up animation-delay-500">
+              <div className="relative aspect-video max-w-2xl mx-auto rounded-xl border-2 border-primary/20 bg-card shadow-lg overflow-hidden">
+                <div className="absolute inset-0 flex items-center justify-center bg-muted/50">
+                  <div className="text-center">
+                    <Play className="h-16 w-16 text-primary mx-auto mb-2" />
+                    <p className="text-muted-foreground">Video coming soon</p>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center animate-fade-up animation-delay-600">

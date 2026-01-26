@@ -64,16 +64,6 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                {/* Credentials */}
-                <div className="space-y-2">
-                  <p className="text-sm font-medium text-foreground">Credentials</p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="bg-card border border-border rounded-full px-3 py-1 text-xs text-muted-foreground">MBA</span>
-                    <span className="bg-card border border-border rounded-full px-3 py-1 text-xs text-muted-foreground">PMP</span>
-                    <span className="bg-card border border-border rounded-full px-3 py-1 text-xs text-muted-foreground">CSPO</span>
-                    <span className="bg-card border border-border rounded-full px-3 py-1 text-xs text-muted-foreground">SAFe® 4</span>
-                  </div>
-                </div>
               </div>
 
               {/* CTA */}

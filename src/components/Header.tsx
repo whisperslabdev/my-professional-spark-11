@@ -29,17 +29,19 @@ const Header = () => {
           : 'bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-8 md:px-20 lg:px-32 py-4">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="#" className="flex items-center gap-3">
-            <span className="text-2xl font-serif font-bold text-foreground">
-              Michael <span className="text-primary">Kearse</span>
-            </span>
-          </a>
+          {/* Logo - Left */}
+          <div className="flex-1">
+            <a href="#" className="flex items-center gap-3">
+              <span className="text-2xl font-serif font-bold text-foreground">
+                Michael <span className="text-primary">Kearse</span>
+              </span>
+            </a>
+          </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          {/* Desktop Navigation - Center */}
+          <nav className="hidden md:flex items-center justify-center gap-8 flex-1">
             {navLinks.map((link) => (
               <a
                 key={link.name}
@@ -49,12 +51,16 @@ const Header = () => {
                 {link.name}
               </a>
             ))}
+          </nav>
+
+          {/* CTA Button - Right */}
+          <div className="hidden md:flex flex-1 justify-end">
             <Button variant="hero" size="default" asChild>
               <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
                 Let's Connect
               </a>
             </Button>
-          </nav>
+          </div>
 
           {/* Mobile Menu Button */}
           <button

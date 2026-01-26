@@ -27,7 +27,7 @@ const achievements = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="pt-8 pb-16 bg-background">
+    <section id="about" className="pt-0 pb-16 bg-background">
       <div className="container mx-auto px-8 md:px-20 lg:px-32">
         {/* Main Intro with Image */}
         <div className="grid lg:grid-cols-5 gap-12 items-center mb-12">

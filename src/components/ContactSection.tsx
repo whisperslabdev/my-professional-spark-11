@@ -24,10 +24,10 @@ const ContactSection = () => {
           <div className="relative overflow-hidden rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/10 via-background to-background p-6 md:p-8">
             <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-primary/10 to-transparent" />
             
-            <div className="relative grid md:grid-cols-2 gap-8">
+            <div className="relative grid md:grid-cols-2 gap-8 items-stretch">
               {/* Contact Info */}
-              <div className="space-y-6">
-                <div>
+              <div className="flex flex-col">
+                <div className="mb-4">
                   <h3 className="text-lg font-serif font-bold text-foreground mb-3">
                     Connect With Me
                   </h3>
@@ -37,12 +37,12 @@ const ContactSection = () => {
                   </p>
                 </div>
 
-                <div className="space-y-3">
+                <div className="space-y-3 flex-1 flex flex-col">
                   <a
                     href="https://www.linkedin.com/in/wealthbuilding/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 rounded-xl bg-card border border-border hover:border-primary/30 transition-colors group"
+                    className="flex items-center gap-3 p-3 rounded-xl bg-card border border-border hover:border-primary/30 transition-colors group flex-1"
                   >
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                       <Linkedin className="h-4 w-4 text-primary" />
@@ -53,22 +53,21 @@ const ContactSection = () => {
                     </div>
                   </a>
 
-                  <div className="flex items-center gap-3 p-3 rounded-xl bg-card border border-border">
+                  <div className="flex items-center gap-3 p-3 rounded-xl bg-card border border-border flex-1">
                     <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                       <MapPin className="h-4 w-4 text-primary" />
                     </div>
                     <div>
                       <p className="text-xs text-muted-foreground">Location</p>
-                      <p className="text-foreground font-medium text-sm">Pennsylvania (Western PA & Ohio)</p>
+                      <p className="text-foreground font-medium text-sm">Pennsylvania</p>
                     </div>
                   </div>
                 </div>
-
               </div>
 
               {/* CTA */}
-              <div className="flex flex-col justify-center space-y-4">
-                <div className="p-5 rounded-xl bg-card border border-border">
+              <div className="flex flex-col">
+                <div className="p-5 rounded-xl bg-card border border-border flex-1 flex flex-col justify-center">
                   <div className="flex items-center gap-2 mb-2">
                     <MessageSquare className="h-4 w-4 text-primary" />
                     <h4 className="text-base font-serif font-bold text-foreground">
@@ -86,7 +85,6 @@ const ContactSection = () => {
                     </a>
                   </Button>
                 </div>
-
               </div>
             </div>
           </div>

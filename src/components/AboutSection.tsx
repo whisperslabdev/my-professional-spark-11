@@ -1,4 +1,5 @@
 import { Building2, TrendingUp, DollarSign, Users, GraduationCap, MapPin } from 'lucide-react';
+import heroPortrait from '@/assets/hero-portrait.jpg';
 
 const achievements = [
   {
@@ -34,20 +35,38 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        {/* Main Intro */}
-        <div className="max-w-3xl mx-auto text-center mb-20">
-          <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
-            About Michael Kearse
-          </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
-            Building Wealth Through <span className="gradient-text">Creative Financing</span>
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed">
-            Michael Kearse is a Pennsylvania-based real estate investor who has cracked the code 
-            on creative deal-making. With a background in project management and a passion for 
-            innovative investing strategies, he specializes in seller financing, private capital, 
-            and virtual property flipping.
-          </p>
+        {/* Main Intro with Image */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
+          {/* Image */}
+          <div className="order-2 lg:order-1 flex justify-center">
+            <div className="relative">
+              <div className="w-72 h-72 md:w-80 md:h-80 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
+                <img 
+                  src={heroPortrait} 
+                  alt="Michael Kearse" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-xl -z-10"></div>
+              <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary/20 rounded-lg -z-10"></div>
+            </div>
+          </div>
+          
+          {/* Text Content */}
+          <div className="order-1 lg:order-2 text-center lg:text-left">
+            <p className="text-primary font-medium tracking-wider uppercase text-sm mb-4">
+              About Michael Kearse
+            </p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-6">
+              Building Wealth Through <span className="gradient-text">Creative Financing</span>
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              Michael Kearse is a Pennsylvania-based real estate investor who has cracked the code 
+              on creative deal-making. With a background in project management and a passion for 
+              innovative investing strategies, he specializes in seller financing, private capital, 
+              and virtual property flipping.
+            </p>
+          </div>
         </div>
 
         {/* Achievements Grid */}

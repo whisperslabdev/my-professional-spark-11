@@ -27,7 +27,7 @@ const steps = [
 const StrategySection = () => {
   return (
     <section id="strategy" className="py-16 bg-secondary/20">
-      <div className="container mx-auto px-8 md:px-20 lg:px-32">
+      <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">
           <p className="text-primary font-medium tracking-wider uppercase text-sm mb-3">

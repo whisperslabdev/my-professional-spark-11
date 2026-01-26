@@ -27,12 +27,12 @@ const achievements = [
 
 const AboutSection = () => {
   return (
-    <section id="about" className="pt-8 pb-16 bg-background">
-      <div className="container mx-auto px-8 md:px-20 lg:px-32">
+    <section id="about" className="py-16 bg-background">
+      <div className="container mx-auto px-6">
         {/* Main Intro with Image */}
-        <div className="grid lg:grid-cols-5 gap-12 items-center mb-12">
-          {/* Text Content - takes 3 columns */}
-          <div className="lg:col-span-3 text-center lg:text-left">
+        <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+          {/* Text Content */}
+          <div className="text-center lg:text-left">
             <p className="text-primary font-medium tracking-wider uppercase text-sm mb-3">
               About Michael Kearse
             </p>
@@ -47,18 +47,18 @@ const AboutSection = () => {
             </p>
           </div>
           
-          {/* Image - takes 2 columns */}
-          <div className="lg:col-span-2 flex justify-center lg:justify-end">
+          {/* Image */}
+          <div className="flex justify-center">
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-[340px] lg:h-[340px] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
+              <div className="w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <img 
                   src={heroPortrait} 
                   alt="Michael Kearse" 
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/10 rounded-xl -z-10"></div>
-              <div className="absolute -top-2 -left-2 w-10 h-10 bg-primary/20 rounded-lg -z-10"></div>
+              <div className="absolute -bottom-3 -right-3 w-20 h-20 bg-primary/10 rounded-xl -z-10"></div>
+              <div className="absolute -top-3 -left-3 w-12 h-12 bg-primary/20 rounded-lg -z-10"></div>
             </div>
           </div>
         </div>

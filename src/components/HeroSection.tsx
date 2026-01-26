@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/3 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-8 md:px-20 lg:px-32 py-20 relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto text-center">
           {/* Content */}
           <div className="space-y-6">
             <div className="space-y-3">

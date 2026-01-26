@@ -1,4 +1,4 @@
-import { Building2, TrendingUp, DollarSign, Users, GraduationCap, MapPin } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, Users } from 'lucide-react';
 import heroPortrait from '@/assets/hero-portrait.jpg';
 
 const achievements = [
@@ -24,12 +24,6 @@ const achievements = [
   },
 ];
 
-const credentials = [
-  { abbrev: 'MBA', full: 'Master of Business Administration' },
-  { abbrev: 'PMP', full: 'Project Management Professional' },
-  { abbrev: 'CSPO', full: 'Certified Scrum Product Owner' },
-  { abbrev: 'SAFe® 4 Agilist', full: 'Certified Agile Professional' },
-];
 
 const AboutSection = () => {
   return (
@@ -70,7 +64,7 @@ const AboutSection = () => {
         </div>
 
         {/* Achievements Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {achievements.map((achievement, index) => (
             <div
               key={achievement.title}
@@ -88,54 +82,6 @@ const AboutSection = () => {
               </p>
             </div>
           ))}
-        </div>
-
-        {/* Credentials & Market Focus - Two Column */}
-        <div className="grid md:grid-cols-2 gap-6">
-          {/* Credentials */}
-          <div className="bg-secondary/30 rounded-2xl p-6 border border-border">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
-                <GraduationCap className="h-4 w-4 text-primary" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground">
-                Credentials & Certifications
-              </h3>
-            </div>
-            <div className="grid grid-cols-2 gap-3">
-              {credentials.map((cred) => (
-                <div key={cred.abbrev} className="bg-card border border-border rounded-lg p-3">
-                  <span className="text-base font-bold text-foreground block">{cred.abbrev}</span>
-                  <span className="text-xs text-muted-foreground">{cred.full}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Market Focus */}
-          <div className="bg-secondary/30 rounded-2xl p-6 border border-border">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-primary/10 flex items-center justify-center">
-                <MapPin className="h-4 w-4 text-primary" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground">
-                Market Focus
-              </h3>
-            </div>
-            <div className="space-y-3">
-              <div className="bg-card border border-border rounded-lg p-3">
-                <span className="text-base font-bold text-foreground block">Western Pennsylvania</span>
-                <span className="text-sm text-muted-foreground">Primary investment market with deep local expertise</span>
-              </div>
-              <div className="bg-card border border-border rounded-lg p-3">
-                <span className="text-base font-bold text-foreground block">Ohio Markets</span>
-                <span className="text-sm text-muted-foreground">Expanding portfolio with high-yield opportunities</span>
-              </div>
-              <div className="bg-card border border-border rounded-lg p-3 flex items-center gap-3">
-                <span className="text-primary font-medium">🎙️ Featured Podcast Guest</span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -56,22 +56,27 @@ const TestimonialsSection = () => {
           ))}
         </div>
 
-        {/* Featured Podcast */}
+        {/* Michael's Podcast */}
         <div className="max-w-3xl mx-auto">
-          <div className="bg-card border border-border rounded-2xl p-6 text-center">
-            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
+          <a 
+            href="https://open.spotify.com/show/6pI8FjqflqzlfyK5bQHh76"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-card border border-border rounded-2xl p-6 text-center hover:border-primary/30 transition-all duration-300 group"
+          >
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
               <Mic className="h-7 w-7 text-primary" />
             </div>
             <h3 className="text-lg font-serif font-bold text-foreground mb-2">
-              Featured on The WillPower Podcast
+              Listen to My Podcast
             </h3>
             <p className="text-muted-foreground text-sm mb-3">
-              "Creative Hustle: How Michael Kearse Acquired 100+ Doors with Seller Financing & $4M in Private Capital"
+              Join me as I share insights on creative financing, real estate investing, and building wealth through strategic deal-making.
             </p>
-            <p className="text-sm text-primary">
-              Listen to learn the mindset shifts that helped scale rapidly
+            <p className="text-sm text-primary group-hover:underline">
+              Listen on Spotify →
             </p>
-          </div>
+          </a>
         </div>
       </div>
     </section>

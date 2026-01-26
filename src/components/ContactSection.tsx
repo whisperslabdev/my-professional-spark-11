@@ -97,10 +97,6 @@ const ContactSection = () => {
                   </Button>
                 </div>
 
-                <div className="text-center text-sm text-muted-foreground">
-                  <p>Specializing in Western PA & Ohio Markets</p>
-                  <p>Open to remote partnerships nationwide</p>
-                </div>
               </div>
             </div>
           </div>

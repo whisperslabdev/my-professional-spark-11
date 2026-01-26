@@ -50,7 +50,7 @@ const AboutSection = () => {
           {/* Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="w-64 h-64 md:w-72 md:h-72 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
+              <div className="w-72 h-72 md:w-96 md:h-96 lg:w-[420px] lg:h-[420px] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
                 <img 
                   src={heroPortrait} 
                   alt="Michael Kearse" 

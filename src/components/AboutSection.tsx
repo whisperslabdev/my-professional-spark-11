@@ -1,4 +1,5 @@
-import { Building2, TrendingUp, DollarSign, Users } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, Users, ArrowRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const achievements = [
   {
@@ -47,7 +48,7 @@ const AboutSection = () => {
           </div>
           
           {/* Video - takes 2 columns */}
-          <div className="lg:col-span-2 flex justify-center lg:justify-end">
+          <div className="lg:col-span-2 flex flex-col items-center lg:items-end gap-4">
             <div className="relative">
               <div className="w-64 md:w-72 lg:w-80 aspect-[9/16] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
                 <iframe
@@ -61,6 +62,12 @@ const AboutSection = () => {
               <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/10 rounded-xl -z-10"></div>
               <div className="absolute -top-2 -left-2 w-10 h-10 bg-primary/20 rounded-lg -z-10"></div>
             </div>
+            <Button variant="hero" size="xl" className="group" asChild>
+              <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+                Let's Connect
+                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+              </a>
+            </Button>
           </div>
         </div>
 

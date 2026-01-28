@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button';
-import { ArrowRight, Play } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -30,18 +28,6 @@ const HeroSection = () => {
 
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center animate-fade-up animation-delay-600">
-              <Button variant="hero" size="xl" className="group" asChild>
-                <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
-                  Let's Connect
-                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-                </a>
-              </Button>
-              <Button variant="heroOutline" size="xl" className="group">
-                <Play className="mr-2 h-5 w-5" />
-                Learn My Strategy
-              </Button>
-            </div>
 
             {/* Trust indicators */}
             <div className="flex flex-wrap items-center justify-center gap-6 pt-6 animate-fade-up animation-delay-800">

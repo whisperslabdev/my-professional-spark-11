@@ -15,11 +15,17 @@ const AboutSection = () => {
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-foreground mb-4">
               Building Wealth Through <span className="gradient-text">Creative Financing</span>
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
               Michael Kearse is a Pennsylvania-based real estate investor who has cracked the code 
               on creative deal-making. With a background in project management and a passion for 
               innovative investing strategies, he specializes in seller financing, private capital, 
               and virtual property flipping.
+            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+              His mission is simple: help everyday people build generational wealth through real estate 
+              without needing massive down payments or perfect credit. Whether you're a first-time 
+              investor or looking to scale your portfolio, Michael provides the strategies, mentorship, 
+              and resources to help you succeed in today's market.
             </p>
             <Button variant="hero" size="xl" className="group" asChild>
               <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">

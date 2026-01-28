@@ -27,6 +27,22 @@ const AboutSection = () => {
               investor or looking to scale your portfolio, Michael provides the strategies, mentorship, 
               and resources to help you succeed in today's market.
             </p>
+            {/* Stats */}
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 mb-6">
+              <div className="text-center">
+                <p className="text-3xl font-serif font-bold text-primary">100+</p>
+                <p className="text-sm text-muted-foreground">Doors Acquired</p>
+              </div>
+              <div className="text-center">
+                <p className="text-3xl font-serif font-bold text-primary">$4M+</p>
+                <p className="text-sm text-muted-foreground">Private Capital Raised</p>
+              </div>
+              <div className="text-center">
+                <p className="text-3xl font-serif font-bold text-primary">60+</p>
+                <p className="text-sm text-muted-foreground">Properties Managed</p>
+              </div>
+            </div>
+
             <Button variant="hero" size="xl" className="group" asChild>
               <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
                 Let's Connect
@@ -50,22 +66,6 @@ const AboutSection = () => {
               <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/10 rounded-xl -z-10"></div>
               <div className="absolute -top-2 -left-2 w-10 h-10 bg-primary/20 rounded-lg -z-10"></div>
             </div>
-          </div>
-        </div>
-
-        {/* Stats */}
-        <div className="flex flex-wrap items-center justify-center gap-8 pt-12">
-          <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-primary">100+</p>
-            <p className="text-sm text-muted-foreground">Doors Acquired</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-primary">$4M+</p>
-            <p className="text-sm text-muted-foreground">Private Capital Raised</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-serif font-bold text-primary">60+</p>
-            <p className="text-sm text-muted-foreground">Properties Managed</p>
           </div>
         </div>
       </div>

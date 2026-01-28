@@ -30,7 +30,7 @@ const HeroSection = () => {
 
             {/* Video Box */}
             <div className="mt-8 animate-fade-up animation-delay-500">
-              <div className="relative aspect-video max-w-2xl mx-auto rounded-xl bg-card shadow-md overflow-hidden">
+              <div className="relative aspect-square max-w-md mx-auto rounded-xl bg-card shadow-md overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center bg-muted/50">
                   <div className="text-center">
                     <Play className="h-16 w-16 text-primary mx-auto mb-2" />

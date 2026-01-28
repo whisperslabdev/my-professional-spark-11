@@ -43,12 +43,20 @@ const AboutSection = () => {
               </div>
             </div>
 
-            <Button variant="hero" size="xl" className="group" asChild>
-              <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
-                Let's Connect
-                <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-              </a>
-            </Button>
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
+              <Button variant="hero" size="xl" className="group" asChild>
+                <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+                  Let's Connect
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
+              <Button variant="outline" size="xl" className="group" asChild>
+                <a href="#strategy">
+                  Learn My Strategy
+                  <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                </a>
+              </Button>
+            </div>
           </div>
 
           {/* Video */}

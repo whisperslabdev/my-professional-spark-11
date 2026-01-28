@@ -1,26 +1,21 @@
-import { Building2, TrendingUp, DollarSign, Users, ArrowRight } from 'lucide-react';
+import { Building2, TrendingUp, DollarSign, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const achievements = [
+const stats = [
   {
     icon: Building2,
-    title: '100+ Doors Acquired',
-    description: 'Built a substantial portfolio using creative strategies without traditional bank loans.',
+    value: '100+',
+    label: 'Doors Acquired',
   },
   {
     icon: DollarSign,
-    title: '$4M+ Private Capital',
-    description: 'Raised millions from private lenders by building trust and delivering consistent returns.',
+    value: '$4M+',
+    label: 'Private Capital Raised',
   },
   {
     icon: TrendingUp,
-    title: 'Virtual Wealth Flipping',
-    description: 'Pioneered a strategy for acquiring and selling properties entirely online.',
-  },
-  {
-    icon: Users,
-    title: 'Lender-Focused Approach',
-    description: 'Creating win-win deals that provide predictable returns for passive investors.',
+    value: '60+',
+    label: 'Properties Managed',
   },
 ];
 
@@ -71,23 +66,15 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Achievements Grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {achievements.map((achievement, index) => (
-            <div
-              key={achievement.title}
-              className="group card-elevated p-5 rounded-xl border border-border hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 text-center"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 mx-auto group-hover:bg-primary/20 transition-colors">
-                <achievement.icon className="h-6 w-6 text-primary" />
+        {/* Stats */}
+        <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+          {stats.map((stat) => (
+            <div key={stat.label} className="text-center">
+              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 mx-auto">
+                <stat.icon className="h-6 w-6 text-primary" />
               </div>
-              <h3 className="text-base font-semibold text-foreground mb-1">
-                {achievement.title}
-              </h3>
-              <p className="text-sm text-muted-foreground">
-                {achievement.description}
-              </p>
+              <p className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</p>
+              <p className="text-sm text-muted-foreground">{stat.label}</p>
             </div>
           ))}
         </div>

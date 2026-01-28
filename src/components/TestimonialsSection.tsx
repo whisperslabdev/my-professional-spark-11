@@ -20,7 +20,7 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-16">
+    <section className="py-10">
       <div className="container mx-auto px-8 md:px-20 lg:px-32">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-10">

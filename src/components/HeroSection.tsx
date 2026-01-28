@@ -1,7 +1,7 @@
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary/30 to-background" />
       
@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-primary/3 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-8 md:px-20 lg:px-32 py-12 relative z-10">
+      <div className="container mx-auto px-8 md:px-20 lg:px-32 py-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           {/* Content */}
           <div className="space-y-6">

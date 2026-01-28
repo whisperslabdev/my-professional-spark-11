@@ -1,5 +1,4 @@
 import { Building2, TrendingUp, DollarSign, Users } from 'lucide-react';
-import heroPortrait from '@/assets/hero-portrait.jpg';
 
 const achievements = [
   {
@@ -47,14 +46,16 @@ const AboutSection = () => {
             </p>
           </div>
           
-          {/* Image - takes 2 columns */}
+          {/* Video - takes 2 columns */}
           <div className="lg:col-span-2 flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-[340px] lg:h-[340px] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
-                <img 
-                  src={heroPortrait} 
-                  alt="Michael Kearse" 
-                  className="w-full h-full object-cover"
+              <div className="w-64 md:w-72 lg:w-80 aspect-[9/16] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
+                <iframe
+                  src="https://www.youtube.com/embed/3FocvaMcunA"
+                  title="YouTube video"
+                  className="w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                 />
               </div>
               <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/10 rounded-xl -z-10"></div>

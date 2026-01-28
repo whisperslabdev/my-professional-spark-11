@@ -28,18 +28,6 @@ const HeroSection = () => {
                 passive income through creative financing and seller-financed properties.
               </p>
 
-            {/* Video Box */}
-            <div className="mt-8 animate-fade-up animation-delay-500">
-              <div className="relative aspect-[9/16] max-w-xs mx-auto rounded-xl bg-card shadow-md overflow-hidden">
-                <iframe
-                  src="https://www.youtube.com/embed/3FocvaMcunA"
-                  title="YouTube video"
-                  className="absolute inset-0 w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
-              </div>
-            </div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 justify-center animate-fade-up animation-delay-600">

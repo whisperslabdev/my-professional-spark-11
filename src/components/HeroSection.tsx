@@ -30,13 +30,14 @@ const HeroSection = () => {
 
             {/* Video Box */}
             <div className="mt-8 animate-fade-up animation-delay-500">
-              <div className="relative aspect-square max-w-md mx-auto rounded-xl bg-card shadow-md overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center bg-muted/50">
-                  <div className="text-center">
-                    <Play className="h-16 w-16 text-primary mx-auto mb-2" />
-                    <p className="text-muted-foreground">Video coming soon</p>
-                  </div>
-                </div>
+              <div className="relative aspect-[9/16] max-w-xs mx-auto rounded-xl bg-card shadow-md overflow-hidden">
+                <iframe
+                  src="https://www.youtube.com/embed/3FocvaMcunA"
+                  title="YouTube video"
+                  className="absolute inset-0 w-full h-full"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                />
               </div>
             </div>
             </div>

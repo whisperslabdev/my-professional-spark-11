@@ -1,31 +1,12 @@
-import { Building2, TrendingUp, DollarSign, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-
-const stats = [
-  {
-    icon: Building2,
-    value: '100+',
-    label: 'Doors Acquired',
-  },
-  {
-    icon: DollarSign,
-    value: '$4M+',
-    label: 'Private Capital Raised',
-  },
-  {
-    icon: TrendingUp,
-    value: '60+',
-    label: 'Properties Managed',
-  },
-];
-
 
 const AboutSection = () => {
   return (
     <section id="about" className="pt-0 pb-16 bg-background">
       <div className="container mx-auto px-8 md:px-20 lg:px-32">
         {/* Side-by-side layout: Text left, Video right */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center mb-12">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Text Content */}
           <div className="text-center lg:text-left">
             <p className="text-primary font-medium tracking-wider uppercase text-sm mb-3">
@@ -64,19 +45,6 @@ const AboutSection = () => {
               <div className="absolute -top-2 -left-2 w-10 h-10 bg-primary/20 rounded-lg -z-10"></div>
             </div>
           </div>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
-          {stats.map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 mx-auto">
-                <stat.icon className="h-6 w-6 text-primary" />
-              </div>
-              <p className="text-2xl md:text-3xl font-bold text-foreground">{stat.value}</p>
-              <p className="text-sm text-muted-foreground">{stat.label}</p>
-            </div>
-          ))}
         </div>
       </div>
     </section>

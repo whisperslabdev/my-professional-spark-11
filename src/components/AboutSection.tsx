@@ -49,7 +49,7 @@ const AboutSection = () => {
         {/* Video - centered */}
         <div className="flex flex-col items-center gap-4 mb-12">
           <div className="relative">
-            <div className="w-64 md:w-72 aspect-[9/16] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
+            <div className="w-72 md:w-80 lg:w-96 aspect-[9/16] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
               <iframe
                 src="https://www.youtube.com/embed/3FocvaMcunA"
                 title="YouTube video"

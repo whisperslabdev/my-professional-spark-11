@@ -6,7 +6,7 @@ const AboutSection = () => {
     <section id="about" className="pt-0 pb-16 bg-background">
       <div className="container mx-auto px-8 md:px-20 lg:px-32">
         {/* Side-by-side layout: Text left, Video right */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Text Content */}
           <div className="text-center lg:text-left">
             <p className="text-primary font-medium tracking-wider uppercase text-sm mb-3">

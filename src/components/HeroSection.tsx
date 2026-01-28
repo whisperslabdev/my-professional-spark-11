@@ -18,7 +18,7 @@ const HeroSection = () => {
                 Real Estate Investor • Creative Financing Expert • MBA, PMP
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-foreground leading-tight animate-fade-up animation-delay-200">
-                How to Generate <span className="gradient-text">$15,000-$75,000</span>
+                Generate <span className="gradient-text">$15,000-$75,000</span>
                 <span className="block">in Passive Income Annually</span>
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto animate-fade-up animation-delay-400">

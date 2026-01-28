@@ -28,22 +28,6 @@ const HeroSection = () => {
 
             </div>
 
-
-            {/* Trust indicators */}
-            <div className="flex flex-wrap items-center justify-center gap-6 pt-6 animate-fade-up animation-delay-800">
-              <div className="text-center">
-                <p className="text-3xl font-serif font-bold text-primary">100+</p>
-                <p className="text-sm text-muted-foreground">Doors Acquired</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-serif font-bold text-primary">$4M+</p>
-                <p className="text-sm text-muted-foreground">Private Capital Raised</p>
-              </div>
-              <div className="text-center">
-                <p className="text-3xl font-serif font-bold text-primary">60+</p>
-                <p className="text-sm text-muted-foreground">Properties Managed</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

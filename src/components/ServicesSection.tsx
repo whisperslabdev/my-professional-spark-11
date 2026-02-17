@@ -99,7 +99,7 @@ const ServicesSection = () => {
         <div className="text-center">
           <div className="inline-flex flex-col sm:flex-row gap-4 items-center">
             <Button variant="hero" size="xl" className="group" asChild>
-              <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/virtualwealthflip" target="_blank" rel="noopener noreferrer">
                 <MessageSquare className="mr-2 h-5 w-5" />
                 Let's Discuss Opportunities
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />

@@ -56,7 +56,7 @@ const Header = () => {
           {/* CTA Button - Right */}
           <div className="hidden md:flex flex-1 justify-end">
             <Button variant="hero" size="default" asChild>
-              <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/virtualwealthflip" target="_blank" rel="noopener noreferrer">
                 Let's Connect
               </a>
             </Button>
@@ -86,7 +86,7 @@ const Header = () => {
                 </a>
               ))}
               <Button variant="hero" size="default" className="mt-2" asChild>
-                <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
+                <a href="https://calendly.com/virtualwealthflip" target="_blank" rel="noopener noreferrer">
                   Let's Connect
                 </a>
               </Button>

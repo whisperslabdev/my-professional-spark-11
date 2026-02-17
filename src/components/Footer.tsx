@@ -22,7 +22,7 @@ const Footer = () => {
           {/* Social - Right */}
           <div className="md:flex-1 flex justify-end">
             <a
-              href="https://www.linkedin.com/in/wealthbuilding/"
+              href="https://calendly.com/virtualwealthflip"
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-lg bg-card border border-border hover:border-primary/30 hover:bg-primary/10 transition-all flex items-center justify-center"

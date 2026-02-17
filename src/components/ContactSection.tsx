@@ -36,8 +36,8 @@ const ContactSection = () => {
                 learn about the Virtual Wealth Flipping strategy, or explore partnership options.
               </p>
               <Button variant="hero" size="lg" className="group text-base px-8 py-6" asChild>
-                <a href="https://www.linkedin.com/in/wealthbuilding/" target="_blank" rel="noopener noreferrer">
-                  Connect on LinkedIn
+                <a href="https://calendly.com/virtualwealthflip" target="_blank" rel="noopener noreferrer">
+                  Book a Call
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </a>
               </Button>

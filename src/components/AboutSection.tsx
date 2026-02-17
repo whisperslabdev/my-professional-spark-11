@@ -1,4 +1,5 @@
 import { ArrowRight } from 'lucide-react';
+import heroPortrait from '@/assets/hero-portrait.jpg';
 import { Button } from '@/components/ui/button';
 
 const AboutSection = () => {
@@ -63,12 +64,10 @@ const AboutSection = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-72 md:w-80 lg:w-96 aspect-[9/16] rounded-2xl overflow-hidden border-4 border-primary/20 shadow-xl">
-                <iframe
-                  src="https://www.youtube.com/embed/3FocvaMcunA"
-                  title="YouTube video"
-                  className="w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
+                <img
+                  src={heroPortrait}
+                  alt="Michael Kearse"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div className="absolute -bottom-2 -right-2 w-16 h-16 bg-primary/10 rounded-xl -z-10"></div>

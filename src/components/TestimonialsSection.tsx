@@ -1,4 +1,4 @@
-import { Quote, Mic } from 'lucide-react';
+import { Quote, Mic, Youtube } from 'lucide-react';
 
 const testimonials = [
   {
@@ -57,7 +57,7 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Michael's Podcast */}
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto grid sm:grid-cols-2 gap-6">
           <a 
             href="https://open.spotify.com/show/6pI8FjqflqzlfyK5bQHh76"
             target="_blank"
@@ -68,13 +68,33 @@ const TestimonialsSection = () => {
               <Mic className="h-7 w-7 text-primary" />
             </div>
             <h3 className="text-lg font-serif font-bold text-foreground mb-2">
-              Listen to My Podcast
+              Listen on Spotify
             </h3>
             <p className="text-muted-foreground text-sm mb-3">
-              Join me as I share insights on creative financing, real estate investing, and building wealth through strategic deal-making.
+              Insights on creative financing, real estate investing, and building wealth.
             </p>
             <p className="text-sm text-primary group-hover:underline">
-              Listen on Spotify →
+              Open Spotify →
+            </p>
+          </a>
+
+          <a 
+            href="https://www.youtube.com/@VirtualWealthFlipping"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-card border border-border rounded-2xl p-6 text-center hover:border-primary/30 transition-all duration-300 group"
+          >
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+              <Youtube className="h-7 w-7 text-primary" />
+            </div>
+            <h3 className="text-lg font-serif font-bold text-foreground mb-2">
+              Watch on YouTube
+            </h3>
+            <p className="text-muted-foreground text-sm mb-3">
+              Video episodes, deal breakdowns, and strategy walkthroughs.
+            </p>
+            <p className="text-sm text-primary group-hover:underline">
+              Open YouTube →
             </p>
           </a>
         </div>
